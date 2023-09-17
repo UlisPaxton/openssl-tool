@@ -1,0 +1,21 @@
+[ req ]
+default_bits        = 4096
+distinguished_name  = req_distinguished_name
+[ req_distinguished_name ]
+countryName              = RU
+country_Name_default     = RU
+stateOrProvinceName      = Kaluga
+stateOrProvinceName_default = Kaluga
+localityName             = RU
+localityName_default     = Kaluga
+organizationName         = Home_net
+organizationName_default = Home_net
+commonName               = N/A
+commonName_default       = {{ fqdn }}
+commonName_max          = 64
+[req_ext]
+subjectAltName           = @alt_names
+[alt_names]
+DNS.1                    = {{context.hostname}}
+DNS.2                    = {{context.fqdn}}
+IP.1                     = {{context.ip}}

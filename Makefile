@@ -12,8 +12,8 @@ default:
 	# 	складывает закрытый ключ, сертификат, csr и конфиг openssl в домашнюю папку <remote_ssh_user> на сервере fqdn
 
 ca:
-	#openssl req -newkey rsa:2048 -nodes -keyout ca.key -x509 -days 3654 -out ca.crt -config ./openssl.conf -batch
-	openssl req -x509 -new -nodes -keyout root.key -out root.crt -config ./openssl.conf -batch
+	
+	openssl req -x509 -new -nodes -keyout root.key -out root.crt -days 3654 -config ./openssl.conf -batch
 
 csr_only:  # пераметр fqdn обязательно
 	python3 generate_config.py $(fqdn)

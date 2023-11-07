@@ -14,7 +14,7 @@
  ```make sign fqdn=ya.ru```   
 
  ### Копирует все связанные файлы(key, csr, crt openssl.conf) на указанный сервер в домашнюю папку пользователя
- ```make distribute user=<remote_ssh_user> fqdn=<server_adsress>```
+ ```make distribute user=<remote_ssh_user> fqdn=<server_address>```
   
 ### Устанавливает зависимости, необходимые для работы.
 ```make dependencies```

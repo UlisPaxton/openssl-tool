@@ -6,7 +6,7 @@ default:
 	# 	генерит запрос на подписание серта
 	#
 	# make sign fqdn=ya.ru
-	# 	генерит csr и подписывает корневым сертом ca.crt
+	# 	генерит csr и подписывает корневым сертом root.crt
 	#
 	# make distribute user=<remote_ssh_user> fqdn=<сервер>
 	# 	складывает закрытый ключ, сертификат, csr и конфиг openssl в домашнюю папку <remote_ssh_user> на сервере fqdn

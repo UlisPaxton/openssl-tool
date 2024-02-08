@@ -17,5 +17,6 @@
  ```make distribute user=<remote_ssh_user> fqdn=<server_address>```
   
 ### Устанавливает зависимости, необходимые для работы.
+```apt install make```  
 ```make dependencies```
   
